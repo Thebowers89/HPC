@@ -1,5 +1,6 @@
-package com.yahoo.gamer66790;
+package com.yahoo.gamer66790.Commands;
 
+import com.yahoo.gamer66790.HPCCore;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

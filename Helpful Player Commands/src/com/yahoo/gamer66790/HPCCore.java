@@ -1,16 +1,16 @@
 package com.yahoo.gamer66790;
 
+import com.yahoo.gamer66790.Commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class HPCCore extends JavaPlugin{
 
 	@Override
 	public void onEnable() {
-
-		saveDefaultConfig();
-
+        saveDefaultConfig();
         registerCommands();
 	}
+
 
 	private void registerCommands() {
         getCommand("heal").setExecutor(new HealCommand(this));

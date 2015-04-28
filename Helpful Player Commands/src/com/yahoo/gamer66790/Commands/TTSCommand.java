@@ -1,5 +1,6 @@
-package com.yahoo.gamer66790;
+package com.yahoo.gamer66790.Commands;
 
+import com.yahoo.gamer66790.HPCCore;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -16,25 +17,21 @@ public class TTSCommand implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]) {
 
-		Player player = (Player) sender;
-
 		if (sender instanceof Player) {
+            Player player = (Player) sender;
 			if (cmd.getName().equalsIgnoreCase("tts") || cmd.getName().equalsIgnoreCase("tothesky")) {
 				if (sender.isOp() || sender.hasPermission("HPC.flight")) {
-					if (player.getAllowFlight() == true){
-
+					if (player.getAllowFlight()){
 						player.setAllowFlight(false);
 						player.sendMessage(ChatColor.GREEN + "To the Ground.");
 						return true;
 					}
 					player.setAllowFlight(true);
 					player.sendMessage(ChatColor.GOLD + "To the Sky!");
-
 					return true;
 				}
 				player.sendMessage("Permission, you do not have.");
 			}
-
 		}
 		return false;
 	}

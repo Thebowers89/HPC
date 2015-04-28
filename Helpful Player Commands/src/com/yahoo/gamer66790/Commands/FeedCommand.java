@@ -1,27 +1,27 @@
-package com.yahoo.gamer66790;
+package com.yahoo.gamer66790.Commands;
 
 import java.util.HashMap;
 import java.util.UUID;
 
+import com.yahoo.gamer66790.HPCCore;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class HealCommand implements CommandExecutor {
-
+public class FeedCommand implements CommandExecutor {
+	
 	HPCCore plugin;
-	public HealCommand(HPCCore instance) {
+	public FeedCommand(HPCCore instance) {
 		plugin = instance;
 	}
 	
 	public HashMap<UUID, Long> cooldown = new HashMap<UUID, Long>();
-	
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]) {
-		
-		if (cmd.getName().equalsIgnoreCase("heal") && sender instanceof Player && sender.isOp() || cmd.getName().equalsIgnoreCase("heal") && sender instanceof Player && sender.hasPermission("HPC.heal")) {
+
+		if (cmd.getName().equalsIgnoreCase("feed") && sender instanceof Player && sender.isOp() || cmd.getName().equalsIgnoreCase("feed") && sender instanceof Player && sender.hasPermission("HPC.feed")) {
 			 Player player = (Player) sender;
 			
 			 int cooldownTime = plugin.getConfig().getInt("Command.Cooldown-time");
@@ -38,8 +38,9 @@ public class HealCommand implements CommandExecutor {
 				 
 			 }
 			 
-			 player.setHealth(20.0);
-			 player.sendMessage(ChatColor.GREEN + "You have been Healed.");
+			 player.setFoodLevel(20);
+			 player.setSaturation(20f);
+			 player.sendMessage(ChatColor.GREEN + "Your hunger has been satisfied... For Now.");
 			 
 			 cooldown.put(player.getUniqueId(), System.currentTimeMillis());
 			 
@@ -48,4 +49,6 @@ public class HealCommand implements CommandExecutor {
 		
 		return false;
 	}
+
 }
+
