@@ -16,15 +16,9 @@ public class HPCCore extends JavaPlugin{
 		getCommand("tillik").setExecutor(new TillikCommand());
 		getCommand("playnice").setExecutor(new PlayniceCommand(this));
 		getCommand("playmean").setExecutor(new PlaymeanCommand());
+		getCommand("hpcreload").setExecutor(new ReloadCommand(this));
 		
-		final FileConfiguration config = this.getConfig();
-		
-		config.addDefault("Command.Cooldown-time", 5);
-		config.addDefault("Serverwide.pvp.disable", "PVP is disabled");
-		
-		config.options().copyDefaults(true);
-		
-		saveConfig();
+		this.saveDefaultConfig();
 	}
 	
 	@Override

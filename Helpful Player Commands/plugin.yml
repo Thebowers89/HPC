@@ -30,3 +30,6 @@ commands:
     playmean:
         description:
         usage:
+    hpcreload:
+        description: Reloads HPC config
+        usage: /hpcreload

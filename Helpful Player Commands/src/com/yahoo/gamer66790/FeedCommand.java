@@ -19,7 +19,7 @@ public class FeedCommand implements CommandExecutor {
 	public HashMap<UUID, Long> cooldown = new HashMap<UUID, Long>();
 	@Override
 	public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String args[]) {
-		
+
 		if (cmd.getName().equalsIgnoreCase("feed") && sender instanceof Player && sender.isOp() || cmd.getName().equalsIgnoreCase("feed") && sender instanceof Player && sender.hasPermission("HPC.feed")) {
 			 Player player = (Player) sender;
 			

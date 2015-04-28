@@ -1,0 +1,8 @@
+#Cooldown time for commands
+Command:
+    Cooldown-time: 5
+
+#Pvp disable message
+Serverwide:
+    pvp:
+        disable: "PVP is disabled"

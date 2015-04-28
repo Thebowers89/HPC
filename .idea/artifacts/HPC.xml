@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="HPC">
+    <output-path>$USER_HOME$/Desktop/Spigot 1.8/plugins</output-path>
+    <root id="archive" name="HPC.jar">
+      <element id="module-output" name="Helpful Player Commands" />
+      <element id="file-copy" path="$PROJECT_DIR$/Helpful Player Commands/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/Helpful Player Commands/config.yml" />
+    </root>
+  </artifact>
+</component>
