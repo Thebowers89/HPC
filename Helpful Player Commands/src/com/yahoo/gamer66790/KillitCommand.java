@@ -16,7 +16,7 @@ public class KillitCommand implements CommandExecutor {
 		if (cmd.getName().equalsIgnoreCase("killit") && sender instanceof Player && player.hasPermission("HPC.kill") || cmd.getName().equalsIgnoreCase("killit") && sender instanceof Player && sender.isOp()) {
 			if (world.hasStorm() == true) {
 				
-				Bukkit.broadcastMessage(player.getName() + " killed the rain.");
+				Bukkit.broadcastMessage(player.getName() + " killed the rain in " + world.getName());
 				world.setStorm(false);
 				return true;
 			}
