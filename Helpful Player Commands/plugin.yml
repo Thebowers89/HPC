@@ -1,0 +1,32 @@
+name: HelpfulPlayerCommands
+main: com.yahoo.gamer66790.HPCCore
+version: 1.0
+commands:
+    heal:
+        description: This command heals you
+        usage: /<command>
+    feed:
+        description:
+        usage:
+    poc:
+        description:
+        usage:
+    tts:
+        description:
+        usage:
+        aliases: tothesky
+    skull:
+        description:
+        usage:
+    killit:
+        description:
+        usage:
+    tillik:
+        description:
+        usage:
+    playnice:
+        description:
+        usage:
+    playmean:
+        description:
+        usage:
