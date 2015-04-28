@@ -17,7 +17,7 @@ public class SkullCommand implements CommandExecutor {
 		Player player = (Player) sender;
 		Inventory pi = player.getInventory();
 		
-		if (cmd.getName().equalsIgnoreCase("skull") && sender instanceof Player && sender.isOp() || sender.hasPermission("HPC.skull")) {
+		if (cmd.getName().equalsIgnoreCase("skull") && sender instanceof Player && sender.isOp() || cmd.getName().equalsIgnoreCase("skull") && sender instanceof Player && sender.hasPermission("HPC.skull")) {
 			if (args.length == 1) {
 				
 				ItemStack skull = new ItemStack(Material.SKULL_ITEM, 1, (short)3);
