@@ -2,6 +2,7 @@ package com.yahoo.gamer66790.Commands;
 
 import com.yahoo.gamer66790.HPCCore;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -28,7 +29,7 @@ public class PlayniceCommand implements CommandExecutor {
                     return true;
                 }
                 world.setPVP(false);
-                Bukkit.broadcastMessage(plugin.getConfig().getString("Serverwide.pvp.disable") + " in " + world.getName());
+                Bukkit.broadcastMessage(ChatColor.GREEN + plugin.getConfig().getString("Serverwide.pvp.disable") + " in " + world.getName());
                 return true;
             }
         }
