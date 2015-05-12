@@ -21,8 +21,9 @@ public class HPCCore extends JavaPlugin{
         getCommand("killit").setExecutor(new KillitCommand());
         getCommand("tillik").setExecutor(new TillikCommand());
         getCommand("playnice").setExecutor(new PlayniceCommand(this));
-        getCommand("playmean").setExecutor(new PlaymeanCommand());
+        getCommand("playmean").setExecutor(new PlaymeanCommand(this));
         getCommand("hpcreload").setExecutor(new ReloadCommand(this));
+        getCommand("locate").setExecutor(new LocateCommand());
     }
 
 }

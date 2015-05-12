@@ -33,3 +33,6 @@ commands:
     hpcreload:
         description: Reloads HPC config
         usage: /hpcreload
+    locate:
+        description:
+        usage:
