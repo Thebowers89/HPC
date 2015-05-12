@@ -6,3 +6,4 @@ Command:
 Serverwide:
     pvp:
         disable: "PVP is disabled"
+        enable: "PVP is enabled"
