@@ -24,6 +24,7 @@ public class HPCCore extends JavaPlugin{
         getCommand("playmean").setExecutor(new PlaymeanCommand(this));
         getCommand("hpcreload").setExecutor(new ReloadCommand(this));
         getCommand("locate").setExecutor(new LocateCommand());
+        getCommand("echest").setExecutor(new EChestCommand());
     }
 
 }

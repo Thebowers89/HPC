@@ -31,6 +31,7 @@ public class TTSCommand implements CommandExecutor {
 					return true;
 				}
 				player.sendMessage("Permission, you do not have.");
+                return true;
 			}
 		}
 		return false;

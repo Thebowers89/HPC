@@ -3,36 +3,39 @@ main: com.yahoo.gamer66790.HPCCore
 version: 1.0
 commands:
     heal:
-        description: This command heals you
-        usage: /<command>
+        description: This command heals you.
+        usage: /heal
     feed:
-        description:
-        usage:
+        description: This command feeds and saturates you.
+        usage: /feed
     poc:
-        description:
-        usage:
+        description: Grants you the power of creation.
+        usage: /poc
     tts:
-        description:
-        usage:
+        description: Allows you to go to the sky.
+        usage: /tts
         aliases: tothesky
     skull:
-        description:
-        usage:
+        description: Gives you specified player skull.
+        usage: /skull <player name>
     killit:
-        description:
-        usage:
+        description: Kills the rain.
+        usage: /killit
     tillik:
-        description:
-        usage:
+        description: Causes the rain.
+        usage: /tillik
     playnice:
-        description:
-        usage:
+        description: Disables PvP in a world.
+        usage: /playnice
     playmean:
-        description:
-        usage:
+        description: Enables PvP in a world.
+        usage: /playmean
     hpcreload:
         description: Reloads HPC config
         usage: /hpcreload
     locate:
-        description:
-        usage:
+        description: Locates a specified player.
+        usage: /locate <player name>
+    echest:
+        description: Opens the player's enderchest.
+        usage: /echest
