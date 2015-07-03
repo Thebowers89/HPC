@@ -27,7 +27,7 @@ public class LocateCommand implements CommandExecutor {
                         Double userz = userl.getZ();
                         int userzint = userz.intValue();
 
-                        player.sendMessage(ChatColor.GOLD + args[0] + ChatColor.WHITE + "is in the world: " + ChatColor.GREEN + userw + ChatColor.WHITE + "\n X: " + userxint + "\n Y: " + useryint + "\n Z: " + userzint);
+                        player.sendMessage(ChatColor.GOLD + args[0] + ChatColor.WHITE + " is in the world: " + ChatColor.GREEN + userw + ChatColor.WHITE + "\n X: " + userxint + "\n Y: " + useryint + "\n Z: " + userzint);
                         return true;
                     }
                     sender.sendMessage(ChatColor.RED + "You did this wrong.");
